@@ -11,12 +11,16 @@
   </supportedVersions>
   <modDependencies>
     <li>
+      <packageId>Ludeon.RimWorld.Ideology</packageId>
+      <displayName>Ideology</displayName>
+    </li>
+    <li>
       <packageId>Ludeon.RimWorld.Biotech</packageId>
       <displayName>Biotech</displayName>
     </li>
   </modDependencies>
   <description>
     This Mod is contain some new Faction , Apparel , Weapon and Xenotype in The Theme of Bio-Flesh Dark Fantasy.
-    "Disclaimer: This Mod is use AI Assistance for create the mod If you don't like to see AI create some mod I'm very sorry for hear that.""
+    "Disclaimer: This Mod is use some AI Assistance for create this mod.
   </description>
 </ModMetaData>
