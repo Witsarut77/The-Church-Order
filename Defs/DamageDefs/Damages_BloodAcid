@@ -1,0 +1,17 @@
+<Defs>
+  <DamageDef>
+    <defName>BloodAcidBurn</defName>
+    <label>blood-acid burn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been dissolved by blood-acid.</deathMessage>
+    <hediff>Burn</hediff> <additionalHediffs>
+      <li>
+        <hediff>ChurchOrder_BloodAcidCorrosion</hediff>
+        <severityPerDamageDealt>0.05</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToKillInstantly>0.1</overkillPctToKillInstantly>
+  </DamageDef>
+</Defs>

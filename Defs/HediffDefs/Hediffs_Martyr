@@ -1,0 +1,48 @@
+<Defs>
+  <HediffDef>
+    <defName>MartyrsRadiance</defName>
+    <label>martyr's radiance</label>
+    <description>A fanatical bio-reactive state triggered by physical trauma. The subject's nervous system ignores pain and overclocks muscle fibers as blood is spilled, turning agony into lethal precision.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor> <initialSeverity>0.01</initialSeverity>
+    <isBad>false</isBad> <stages>
+      <li>
+        <label>latent</label>
+        <becomeVisible>false</becomeVisible> </li>
+      
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <label>flickering</label>
+        <painFactor>0.8</painFactor> <statOffsets>
+          <MeleeHitChance>2</MeleeHitChance>
+          <MeleeWeaponAttackSpeed>0.15</MeleeWeaponAttackSpeed>
+        </statOffsets>
+      </li>
+
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>radiant</label>
+        <painFactor>0.5</painFactor> <statOffsets>
+          <MeleeHitChance>5</MeleeHitChance>
+          <MeleeWeaponAttackSpeed>0.30</MeleeWeaponAttackSpeed>
+          <MoveSpeed>0.20</MoveSpeed>
+        </statOffsets>
+      </li>
+
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>transcendent</label>
+        <painFactor>0.1</painFactor> <statOffsets>
+          <MeleeHitChance>10</MeleeHitChance>
+          <MeleeWeaponAttackSpeed>0.50</MeleeWeaponAttackSpeed>
+          <MoveSpeed>0.50</MoveSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset> </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

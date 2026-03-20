@@ -1,0 +1,62 @@
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>TheChurchOrder_Faction</defName>
+    <label>The Church Order</label>
+    <description>A rigid, hierarchical religious order that believes in the sanctity of their mission above all else. They are known for their distinct aesthetic and their refusal to compromise on their dogma.</description>
+    <pawnSingular>Order member</pawnSingular>
+    <pawnsPlural>Order members</pawnsPlural>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>High Archon</leaderTitle>
+    <factionIconPath>World/Factions/ChurchOrderIcon</factionIconPath>
+    <colorSpectrum>
+      <li>(0.6, 0.1, 0.1)</li> <li>(0.1, 0.1, 0.1)</li> </colorSpectrum>
+    
+    <techLevel>Industrial</techLevel> 
+
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <TheChurch_Inquisitor>10</TheChurch_Inquisitor>
+          <TheChurch_Acolyte>20</TheChurch_Acolyte>
+          <TheChurch_Zealot>15</TheChurch_Zealot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <TheChurch_Acolyte>20</TheChurch_Acolyte>
+          <TheChurch_Zealot>10</TheChurch_Zealot>
+          <Villager>5</Villager>
+        </options>
+      </li>
+    </pawnGroupMakers>
+
+    <xenotypeSet>
+  <xenotypeChances>
+    <ChurchOrder_SanguineSect>0.85</ChurchOrder_SanguineSect>
+    <ChurchOrder_SanguineExemplar>0.80</ChurchOrder_SanguineExemplar> 
+    <Hussar>0.10</Hussar>
+    <Baseliner>0.05</Baseliner>
+  </xenotypeChances>
+  </xenotypeSet>
+
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker> 
+</FactionDef>
+</Defs>

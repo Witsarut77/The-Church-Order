@@ -1,0 +1,127 @@
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HemorrhageShard</defName>
+    <label>hemorrhage shard</label>
+    <graphicData>
+      <texPath>Things/Projectile/HemorrhageShard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>SanguineCut</damageDef> 
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SutureFilament</defName>
+    <label>suture filament</label>
+    <projectile>
+      <damageDef>SanguineCut</damageDef>
+      <damageAmountBase>6</damageAmountBase> <stoppingPower>1.5</stoppingPower> <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_BloodAcidCloud</defName>
+    <label>blood-acid pod</label>
+    <projectile>
+      <speed>25</speed>
+      <damageDef>AcidBurn</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <explosionRadius>4.5</explosionRadius>
+      <postExplosionSpawnThingDef>Gas_Toxic</postExplosionSpawnThingDef> </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_HemorrhageRifle</defName>
+    <label>hemorrhage rifle</label>
+    <description>A Church Order firearm that launches pressurized biological shards. The weapon itself looks like a rib-caged canister attached to a jagged barrel. It doesn't kill instantly, but ensures the target bleeds out rapidly.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HemorrhageRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HemorrhageShard</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>26</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_AssaultRifle</soundCast> </li>
+    </verbs>
+    <weaponTags>
+      <li>ChurchRelic</li>
+      <li>IndustrialAdvanced</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PulseSuture</defName>
+    <label>pulse-suture</label>
+    <description>A compact, biological sidearm that launches high-velocity, serrated filaments. While the physical impact is minor, the filaments are coated in a Church-grade anticoagulant that prevents wounds from closing, ensuring the target's life-force slowly drains away.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PulseSuture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SutureFilament</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>15.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast> </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_BleedingSunCenser</defName>
+    <label>censer of the bleeding sun</label>
+    <description>A heavy, ornate censer that pulses with an inner, biological heat. It sprays a thick, crimson vapor that bypasses most armor by seeping into seals and joints, causing immediate respiratory distress and skin sloughing in non-Order members.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BleedingSunCenser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>58000</WorkToMake>
+      <Mass>9.5</Mass>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_BloodAcidCloud</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>12.9</range>
+        <forcedMissRadius>2.4</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Gas_Vent</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

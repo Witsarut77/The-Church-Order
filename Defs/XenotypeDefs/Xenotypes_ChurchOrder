@@ -1,0 +1,36 @@
+<Defs>
+  <XenotypeDef>
+    <defName>ChurchOrder_SanguineSect</defName>
+    <label>Sanguine Initiate</label>
+    <description>A genetically modified human specialized for The Church Order's frontlines.</description>
+    <iconPath>UI/Icons/Xenotypes/SanguineInitiate</iconPath>
+    <combatPriority>100</combatPriority>
+    <genes>
+      <li>ChurchOrder_SanguinePulse</li>
+      <li>StrongMelee</li>
+      <li>Skin_DeepRed</li> 
+      <li>Hair_SnowWhite</li> 
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>ChurchOrder_SanguineExemplar</defName>
+    <label>Sanguine Exemplar</label>
+    <description>The genetic pinnacle of The Church Order. These individuals have been modified to produce the Order's signature anticoagulant in their own marrow. Their skin is a deep, bruised crimson, and they possess a fanatical resistance to pain that allows them to fight long after a normal human would have collapsed.</description>
+    <iconPath>UI/Icons/Xenotypes/SanguineExemplar</iconPath>
+    <combatPriority>100</combatPriority>
+    <genes>
+      <li>ChurchOrder_SanguinePulse</li> 
+      <li>StrongMelee</li>
+      <li>Robust</li>
+      <li>PainReduced</li>
+      <li>Skin_DeepRed</li>
+      <li>Hair_SnowWhite</li>
+      <li>Beards_Always</li> 
+      <li>Aggression_Aggressive</li>      
+      <li>Unstoppable</li>
+      <li>SlowHealer</li>
+      <li>HungerRate_Extra</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

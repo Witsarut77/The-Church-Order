@@ -1,0 +1,92 @@
+<Defs>
+  <PawnKindDef ParentName="OutlanderPawnKindBase">
+    <defName>TheChurch_Acolyte</defName>
+    <label>Order acolyte</label>
+    <combatPower>45</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.7~2.3</gearHealthRange>
+    <apparelMoney>1000~1500</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>ChurchRelic</li>
+    </apparelTags>
+    <weaponMoney>500~1000</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>200~500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <forcedHediffs>
+    <li>MartyrsRadiance</li>
+    </forcedHediffs>
+    <abilities>
+    <li>ChurchOrder_LifeLink</li>
+    </abilities>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>10~15</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OutlanderPawnKindBase">
+    <defName>TheChurch_Zealot</defName>
+    <label>Order zealot</label>
+    <combatPower>85</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <gearHealthRange>1.0~3.0</gearHealthRange>
+    <apparelRequired>
+      <li>Apparel_ChurchInquisitorRobes</li>
+      <li>Apparel_ChurchPenitentVisor</li>
+    </apparelRequired>
+    <apparelMoney>1500~2500</apparelMoney>
+    <weaponMoney>1000~2000</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>LongSword</li>
+    </weaponTags>
+    <forcedHediffs>
+    <li>MartyrsRadiance</li>
+    </forcedHediffs>
+    <abilities>
+    <li>ChurchOrder_LifeLink</li>
+    </abilities>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>15~25</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OutlanderPawnKindBase">
+    <defName>TheChurch_Inquisitor</defName>
+    <label>Order inquisitor</label>
+    <combatPower>150</combatPower>
+    <factionLeader>true</factionLeader> <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>3000~5000</apparelMoney>
+    <apparelTags>
+      <li>IndustrialAdvanced</li>
+      <li>ArmorProtective</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ChurchInquisitorRobes</li>
+      <li>Apparel_ChurchPenitentVisor</li>
+    </apparelRequired>
+    <weaponMoney>2500~4000</weaponMoney>
+    <weaponTags>
+      <li>IndustrialAdvanced</li>
+      <li>ChurchRelic</li>
+      <li>ChurchHeavy</li>
+    </weaponTags>
+    <techHediffsChance>0.5</techHediffsChance> 
+    <techHediffsMoney>1000~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <forcedHediffs>
+    <li>MartyrsRadiance</li>
+    </forcedHediffs>
+    <abilities>
+    <li>ChurchOrder_LifeLink</li>
+    </abilities>
+    <initialWillRange>5~10</initialWillRange>
+    <initialResistanceRange>25~40</initialResistanceRange>
+  </PawnKindDef>
+</Defs>

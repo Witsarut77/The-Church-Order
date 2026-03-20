@@ -1,0 +1,31 @@
+<Defs>
+  <GeneDef>
+    <defName>ChurchOrder_SanguinePulse</defName>
+    <label>sanguine pulse</label>
+    <description>The carrier's bone marrow has been retrofitted to produce a bio-reactive anticoagulant. Their blood carries a faint, rhythmic glow. While this makes them nearly immune to pain-induced shock, it causes their wounds to bleed much more profusely than a normal human.</description>
+    <iconPath>UI/Icons/Genes/Gene_SanguinePulse</iconPath>
+    <displayCategory>CustomBiological</displayCategory>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <biotype>Biotech</biotype>
+    <marketValue>1200</marketValue>
+    
+    <statOffsets>
+      <PainShockThreshold>0.25</PainShockThreshold> 
+      <MeleeHitChance>3</MeleeHitChance>
+    </statOffsets>
+    
+    <statFactors>
+      <InjuryHealingFactor>0.8</InjuryHealingFactor> 
+    </statFactors>
+
+    <capMods>
+      <li>
+        <capacity>BloodPumping</capacity>
+        <offset>0.20</offset>
+      </li>
+    </capMods>
+
+    <hungerRateFactor>1.5</hungerRateFactor> 
+    <biostatMet>2</biostatMet> 
+    <biostatArc>1</biostatArc> </GeneDef>
+</Defs>

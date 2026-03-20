@@ -1,0 +1,73 @@
+<Defs>
+<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CenserOfAgony</defName>
+    <label>censer of agony</label>
+    <description>A heavy, swinging incense burner modified to spray a mist of caustic, biological acid. It covers a wide area in a 'blood-fog' that melts skin and cloth alike.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CenserOfAgony</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>8.0</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BloodAcid</defaultProjectile> <warmupTime>2.5</warmupTime>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>ChurchHeavy</li>
+    </weaponTags>
+    </ThingDef>
+
+<ThingDef ParentName="BaseLauncher">
+    <defName>Gun_CrucibleLauncher</defName>
+    <label>crucible launcher</label>
+    <description>A massive, ribbed launcher that fires pressurized pods of concentrated Church catalyst. On impact, it creates a 'Blood-Mist' that causes immediate, severe internal bleeding to anyone caught in the radius.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CrucibleLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>10</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_BloodPod</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>32</range>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_BloodPod</defName>
+    <label>blood pod</label>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>SanguineCut</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <explosionRadius>3.9</explosionRadius>
+      <postExplosionSpawnThingDef>Filth_Blood</postExplosionSpawnThingDef> 
+    </projectile>
+  </ThingDef>
+</Defs>

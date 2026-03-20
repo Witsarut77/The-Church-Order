@@ -1,0 +1,81 @@
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Gun_SanguineRelicBlade</defName>
+    <label>Sanguine Relic-Blade</label>
+    <description>A heavy, ritualistic blade used by the highest echelons of The Church Order. Its edges are serrated with biological-infused steel that prevents wounds from closing easily. It pulses with a faint, rhythmic heat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/SanguineRelicBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>ChurchRelic</li>
+      <li>IndustrialAdvanced</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MarketValue>850</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>0.10</MeleeHitChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>SanguineCut</li>      
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_SanguisMace</defName>
+    <label>sanguis-mace</label>
+    <description>A heavy, blunt instrument of the Church, wrapped in bio-synthetic muscle fibers. Upon impact, the mace's serrated edges vibrate, widening wounds and ensuring the target cannot clot. It is as much a surgical tool as a weapon of war.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/SanguisMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4.5</Mass>
+      <MeleeWeapon_AverageDPS>18.5</MeleeWeapon_AverageDPS>
+      <MeleeWeapon_AverageArmorPenetration>0.40</MeleeWeapon_AverageArmorPenetration>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

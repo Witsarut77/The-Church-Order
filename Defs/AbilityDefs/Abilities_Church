@@ -1,0 +1,23 @@
+<Defs>
+  <AbilityDef>
+    <defName>ChurchOrder_LifeLink</defName>
+    <label>sanguine life-link</label>
+    <description>Forge a biological bond between two souls. 50% of all incoming damage taken by one is instantly transferred to the other.</description>
+    <iconPath>UI/Abilities/LifeLinkIcon</iconPath>
+    <verbClass>ChurchOrder.Verb_LifeLink</verbClass> 
+    <canUseAboardShip>true</canUseAboardShip>
+    <targetRequired>true</targetRequired>
+    <warmupTicks>60</warmupTicks>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>15</range>
+      <drawAimPie>true</drawAimPie>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <onlyTargetColonists>true</onlyTargetColonists>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+</Defs>

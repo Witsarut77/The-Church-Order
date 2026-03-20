@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>The Church Order</name>
+  <author>Morf</author>
+  <packageId>Morf.TheChurchOrder</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+  <description>
+    This Mod is contain some new Faction , Apparel , Weapon and Xenotype in The Theme of Bio-Flesh Dark Fantasy.
+    "Disclaimer: This Mod is use AI Assistance for create the mod If you don't like to see AI create some mod I'm very sorry for hear that.""
+  </description>
+</ModMetaData>

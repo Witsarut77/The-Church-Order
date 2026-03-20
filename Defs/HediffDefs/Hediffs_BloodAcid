@@ -1,0 +1,50 @@
+<Defs>
+  <HediffDef>
+    <defName>ChurchOrder_BloodAcidCorrosion</defName>
+    <label>blood-acid corrosion</label>
+    <description>A caustic, biological agent that adheres to the skin and dissolves organic tissue. It causes excruciating pain and prevents natural clotting. Without immediate medical cleaning, it will continue to eat through the subject's layers.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.9, 0.4, 0.1)</defaultLabelColor> <makesSickThought>true</makesSickThought>
+    <initialSeverity>0.1</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SelfHealing">
+        <healAmountPerDay>-0.5</healAmountPerDay> </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>15000~30000</disappearsAfterTicks> 
+        </li>
+    </comps>
+    <stages>
+      <li>
+        <label>sizzling</label>
+        <painOffset>0.15</painOffset>
+        <statOffsets>
+          <MoveSpeed>-0.10</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>melting</label>
+        <painOffset>0.40</painOffset>
+        <statOffsets>
+          <MoveSpeed>-0.25</MoveSpeed>
+          <Manipulation>-0.20</Manipulation>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>dissolving</label>
+        <painOffset>0.70</painOffset> <statOffsets>
+          <MoveSpeed>-0.50</MoveSpeed>
+          <Manipulation>-0.40</Manipulation>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
