@@ -15,7 +15,7 @@ A comprehensive biological-horror expansion for RimWorld 1.6 , focusing on ritua
     
 ⛪ Ideology & Rituals (TODO List)
 
-⚔️ Arsenal & Vestments (In-Progress)
+⚔️ Weapon & Apparels (In-Progress)
 
 -----
 
